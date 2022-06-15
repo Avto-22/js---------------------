@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/quiz.css">
+  <script src="../JS/quiz.js" defer></script>
+  <title>QUIZ</title>
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo" hidden>
+    <source src="../IMAGES/fewe.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="main">
+    <div class="nes-container start" style="margin: 1%;">
+      <p><span class="_1" style="font-weight: bolder; font-size: 18px;">ქვიზის დონე :</span><span class="_2"
+          style="font-size: 20px; font-style: italic; "></span></p>
+      <p><span class="_3" style="font-weight: bolder; font-size: 18px; ">თითო შეკითხვისთვის განკუთვნილი დრო
+          :</span><span class="_4" style="font-size: 20px; font-style: italic;"></span></p>
+      <button type="button" class="nes-btn is-warning" id="startBtn" style="width: 100%; ">ტესტის დაწყება</button>
+    </div>
+    <div class="nes-container with-title quizContainer" hidden>
+      <progress class="nes-progress is-warning" value="" max="100"></progress>
+      <div style="float: right;">
+        <p class="progress_text"><span class="now"></span>/<span class="sum"></span></p>
+      </div><br><br>
+      <p id="questionText" value='' class="question"></p>
+      <form name="quiz">
+        <div class="answerInputs">
+          <label>
+            <input type="radio" class="nes-radio radio1" name="answer" value='1'>
+            <span id="firstAnswer" class="answer1"></span>
+          </label>
+          <br>
+          <label>
+            <input type="radio" class="nes-radio radio2" name="answer" value='2'>
+            <span id="secondAnswer" class="answer2"></span>
+          </label>
+          <br>
+          <label>
+            <input type="radio" class="nes-radio radio3" name="answer" value='3'>
+            <span id="thirdAnswer" class="answer3"></span>
+          </label>
+          <br>
+          <label>
+            <input type="radio" class="nes-radio radio4" name="answer" value='4'>
+            <span id="fourthAnswer" class="answer4"></span>
+          </label>
+          <br>
+        </div>
+      </form>
+      <br>
+      <button type="button" class="nes-btn is-warning" id="nextBtn">შემდეგი შეკითხვა</button>
+      <button type="button" class="nes-btn is-warning" id="endBtn" hidden>დასრულება</button>
+    </div>
+    <div class="nes-container with-title is-centered timer" hidden>
+      <p class="title" style="font-size: 20px; font-weight: bolder;letter-spacing: 2px;font-family:cursive">Timer</p>
+      <p style="font-weight: bolder; font-size: 24px;" class="myTimer"><span>00:</span>00:<span class="min1">0</span>
+      </p>
+    </div>
+    <div class="nes-container with-title is-centered point-container" style="margin-top: 10%; " hidden>
+      <p class="title"
+        style="font-size: 20px; font-weight: bolder;letter-spacing: 2px;font-family:cursive; color:rgb(104, 143, 26);">
+        თქვენი შედეგია</p>
+      <p class="point" style="font-weight: bolder; font-size: 24px; color:darkslategrey;"></p>
+      <button type="button" class="nes-btn is-error" id="back" onclick="backCk()">გასვლა</button><br><br>
+      <button type="button" class="nes-btn is-success" id="repeat" onclick="repeatCk()">თავიდან დაწყება</button>
+    </div>
+    <br>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.progress_text {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .question {
+    font-size: 20px !important;
+    font-weight: bolder;
+  }
+
+  .answer1::before {
+    content: "ა) ";
+  }
+
+  .answer2::before {
+    content: "ბ) ";
+  }
+
+  .answer3::before {
+    content: "გ) ";
+  }
+
+  .answer4::before {
+    content: "დ) ";
+  }
+
+  .answer1,
+  .answer2,
+  .answer3,
+  .answer4 {
+    font-size: 18px;
+  }
+
+  body {
+    background-color: rgb(216, 228, 216);
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  #back,#repeat {
+    box-shadow: 0 0 10pt 0.5pt #D3D3D3;
+    transition: 0.3s;
+    color: black !important;
+    font-weight: 800;
+  }
+
+  #back:hover,#repeat:hover{
+    box-shadow: 0 0 15pt 0.5pt #D3D3D3;
+    transform: scale(.9);
+    font-size: 17px;
+  }

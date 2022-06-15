@@ -1,0 +1,38 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .worning_text {
+    color: red;
+    font-weight: bolder;
+  }
+
+  .questions form {
+    text-align: center;
+  }
+
+  .add {
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+  body {
+    background-image: url('../IMAGES/nat.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .icon i {
+    color:rgb(53, 135, 138);
+    transition: .3s;
+  }
+
+  .icon i:hover {
+    color: coral;
+    transform: scale(0.9);
+  }

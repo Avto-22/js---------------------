@@ -1,0 +1,75 @@
+form {
+    padding: 25px;
+}
+
+#out_button:hover {
+    background-color: rgba(97, 44, 44, 0.842) !important;
+}
+
+body {
+    background: #1b1e24;
+}
+
+input[type=text] {
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    background-color: darkgray;
+    color: rgb(43, 43, 31) !important;
+    font-size: 18px;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+}
+
+label {
+    color: aqua;
+    font-size: 20px !important;
+    border-radius: 5%;
+    font-style: inherit !important;
+    font-weight: 900;
+}
+
+select {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    background-color: cadetblue;
+    border-radius: 15%;
+    color: floralwhite;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.register_title {
+    text-align: center;
+}
+
+.register_title p {
+    color: bisque;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: monospace;
+    letter-spacing: 1%;
+}
+
+i {
+    color: coral;
+    transition: .3s;
+}
+
+i:hover {
+    color: rgb(255, 68, 0);
+    transform: scale(0.9);
+}
+
+button {
+    box-shadow: 0 0 10pt 0.5pt #D3D3D3;
+    transition: 0.3s;
+    color: black !important;
+    font-weight: 800;
+}
+
+button:hover {
+    box-shadow: 0 0 15pt 0.5pt #D3D3D3;
+    transform: scale(.9);
+    font-size: 17px;
+}
